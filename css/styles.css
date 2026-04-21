@@ -82,6 +82,44 @@ img{
   object-position: center;
 }
 
+#contenedor-duracion{
+  width: 100%;
+  padding: 40px 30px;
+}
+
+#bloque-duracion{
+  color: black;
+  width: 200px;
+  background-color: #41F193;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.material-symbols-outlined{
+  margin-bottom: 10px;
+}
+
+#bloque-duracion p{
+  margin: 3px;
+}
+#duracion-carrera{
+  font-weight: 400;
+}
+#texto-duracion{
+  font-weight: 600;
+}
+
+
+
+
+#seccion-perfiles{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+
 #banner-campo-laboral{
   background-color: #7c3aed;
 }
