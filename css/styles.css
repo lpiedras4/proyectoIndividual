@@ -1,11 +1,11 @@
 
 body{
    background-color: #0A192F ;
+   font-family: "Poppins", sans-serif;
+   font-style: normal;
 }
 h1{
-  font-family: "Poppins", sans-serif;
   font-weight: 800;
-  font-style: normal;
   font-size: 4rem;
 }
 
@@ -14,6 +14,7 @@ h2{
   font-weight: 500;
   font-style: normal;
   color: white;
+  margin-left: 50px;
   font-size: 2rem;
 }
 
@@ -30,16 +31,14 @@ p, ul,a{
   font-style: normal;
 }
 
-
-
-a{
+nav a{
   margin-left: 30px ;
   color:white;
   text-decoration: none;
-  padding: 10px 10px;
-  border-radius: 20px;
+  padding: 6px 10px;
+  border-radius: 10px;
 }
-a:hover{
+nav a:hover{
   background-color: #1F6FEB;
 }
 
@@ -48,25 +47,108 @@ nav{
   justify-content: end;
   padding: 1rem 2rem;
 }
-
-#banner-inicio{
-  padding: 2rem;
+.banner-inicial{
+  padding: 6rem;
+  line-height: 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#banner-inicio{
   background-color: #41F193;
 }
 
-#bloque-descripcion-banner{
+#bloque-descripcion-banner-inicio{
+  position: relative;
   color: white;
-  padding: 1rem 2rem;
+  padding: 26px 30px;
   background-color: #020617;
-  width: 40vw;
-  height: 10vh;
+  max-width: 500px;
+  margin-top: 20px;
 }
 
-#id-inicio{
-  width:fit-content;
-  height: 45rem;
-
+#bloque-descripcion-banner-inicio p{
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
+
+img{
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#banner-campo-laboral{
+  background-color: #7c3aed;
+}
+
+#banner-universidades{
+  background-color: #1f6feb;
+}
+
+.bloque-uni{
+  background-color: #1F6FEB;
+  height: 200px;
+  margin: 40px 50px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+}
+.bloque-uni p{
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo-contenedor{
+  display: block;
+}
+
+.logo-universidad{
+  height: 150px;
+  width: auto;
+}
+
+.info-universidad{
+  display: block;
+  margin-left: 20px;
+}
+
+button{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #41F193;
+  padding: 6px 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-style: none;
+  border-radius: 6px;
+}
+
+.contendor-areas-de-trabajo{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.contendor-areas-de-trabajo p{
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.contendor-areas-de-trabajo div{
+  background-color: #7c3aed;
+  border:1px solid #0A192F;
+  margin: 80px 40px ;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  
+}
+
