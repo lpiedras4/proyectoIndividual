@@ -167,16 +167,17 @@ nav{
 }
 
 .accordion-grid {
-  
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+  align-items: start;
 }
 
 .accordion-item {
   background-color: #1F6FEB;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .accordion-header {
@@ -241,6 +242,12 @@ nav{
   object-fit: cover;
   border-radius: 3px;
 }
+
+#seccion-area-trabajo h2{
+  text-align: center;
+  margin-bottom: 0;
+}
+
 
 .contendor-areas-de-trabajo span{
  color: #a4a4a4;
