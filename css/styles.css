@@ -14,7 +14,7 @@ h2{
   font-weight: 500;
   font-style: normal;
   color: white;
-  margin-left: 50px;
+  margin-left: 1fr;
   font-size: 2rem;
 }
 
@@ -74,13 +74,15 @@ nav{
   line-height: 1.5;
 }
 
-img{
+.imagen-inicio{
   display: block;
   width: 100%;
   height: 400px;
   object-fit: cover;
   object-position: center;
 }
+
+
 
 #contenedor-duracion{
   width: 100%;
@@ -92,10 +94,11 @@ img{
 
 #bloque-duracion{
   color: black;
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   background-color: #41F193;
-  padding: 10px 20px;
+  padding: 20px 30px;
+  font-size: 1.9rem;
   text-align: center;
   border-radius: 10px;
 }
@@ -140,7 +143,8 @@ img{
 }
 
 .bloque-perfil p, ul{
- color: #757575;
+ color: white;
+ font-size: 1.2rem;
  font-style: normal;
  font-weight: 400;
 }
@@ -151,10 +155,103 @@ img{
   color: white;
 }
 
+#seccion-plan-de-estudios {
+  background-color: #0d0d1a;
+  padding: 48px 40px;
+  color: white;
+}
+
+#seccion-plan-de-estudios h2 {
+  margin-bottom: 32px;
+  font-size: 1.4rem;
+}
+
+.accordion-grid {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.accordion-item {
+  background-color: #1F6FEB;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  color: white;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.open .accordion-body {
+  max-height: 300px;
+}
+
+.accordion-body ul {
+  padding: 0 20px 18px 36px;
+  margin: 0;
+  line-height: 2;
+}
+
 
 #banner-campo-laboral{
   background-color: #7c3aed;
 }
+
+.contendor-areas-de-trabajo{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.contendor-areas-de-trabajo p{
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+  margin: 1px;
+}
+
+.contendor-areas-de-trabajo div{
+  background-color: #7c3aed;
+  border:1px solid #0A192F;
+  margin: 80px 40px ;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.contendor-areas-de-trabajo img{
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.contendor-areas-de-trabajo span{
+ color: #a4a4a4;
+ font-style: normal;
+ font-weight: 300;
+}
+
+.bloque-info-area-de-trabajo{
+  text-align: start;
+}
+
 
 #banner-universidades{
   background-color: #1f6feb;
@@ -200,25 +297,5 @@ button{
   border-radius: 6px;
 }
 
-.contendor-areas-de-trabajo{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
 
-.contendor-areas-de-trabajo p{
-  color: white;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.contendor-areas-de-trabajo div{
-  background-color: #7c3aed;
-  border:1px solid #0A192F;
-  margin: 80px 40px ;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-  
-}
 
