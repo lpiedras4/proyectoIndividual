@@ -85,11 +85,15 @@ img{
 #contenedor-duracion{
   width: 100%;
   padding: 40px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #bloque-duracion{
   color: black;
   width: 200px;
+  height: 100px;
   background-color: #41F193;
   padding: 10px 20px;
   text-align: center;
@@ -110,8 +114,36 @@ img{
   font-weight: 600;
 }
 
+#titulo-perfiles{
+  text-align: center;
+}
 
+#contenedor-perfiles{
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+}
 
+.bloque-perfil{
+  background-color: #41F193;
+  padding: 30px 20px;
+  width: 500px;
+  height: 440px;
+  margin: 10px 20px;
+}
+
+.bloque-perfil h3{
+ color: black;
+ font-style: normal;
+ font-weight: 500;
+}
+
+.bloque-perfil p, ul{
+ color: #757575;
+ font-style: normal;
+ font-weight: 400;
+}
 
 #seccion-perfiles{
   display: flex;
