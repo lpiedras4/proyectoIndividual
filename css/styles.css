@@ -129,6 +129,7 @@ nav{
   width: 500px;
   min-height: 400px;
   margin: 0px 50px;
+  border-radius: 10px;
 }
 
 .bloque-perfil h3{
