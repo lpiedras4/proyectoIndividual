@@ -389,23 +389,19 @@ button{
     padding: 15px;
   }
 
-
   .contendor-areas-de-trabajo {
     grid-template-columns: 1fr;
   }
 
-  
   .contendor-areas-de-trabajo div {
     margin: 15px 10px;
     font-size: 1rem;
   }
 
-  
   .contendor-areas-de-trabajo img {
     width: 120px;
   }
 
-  
   .bloque-uni {
     flex-direction: column;
     height: auto;
@@ -426,7 +422,6 @@ button{
   .bloque-uni p {
     font-size: 1rem;
   }
-
 }
 
 /* Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600px o mas) */
