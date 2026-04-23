@@ -293,10 +293,16 @@ nav{
   margin-left: 20px;
 }
 
+.contenedor-unis a{
+  text-decoration: none;
+}
+
+
 button{
   font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #41F193;
+  color: black;
   padding: 6px 15px;
   font-size: 1rem;
   font-weight: 400;
