@@ -14,7 +14,7 @@ h2{
   font-weight: 500;
   font-style: normal;
   color: white;
-  margin-left: 1fr;
+  margin-left: 50px;
   font-size: 2rem;
 }
 
@@ -95,44 +95,42 @@ nav{
 #bloque-duracion{
   color: black;
   width: 300px;
-  height: 200px;
+  height: 160px;
   background-color: #41F193;
   padding: 20px 30px;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   text-align: center;
   border-radius: 10px;
 }
 
-.material-symbols-outlined{
-  margin-bottom: 10px;
-}
+
 
 #bloque-duracion p{
   margin: 3px;
 }
 #duracion-carrera{
-  font-weight: 400;
+  font-weight: 300;
 }
 #texto-duracion{
   font-weight: 600;
 }
 
-#titulo-perfiles{
-  text-align: center;
+.contenedor-perfil{
+ display: block;
 }
 
-#contenedor-perfiles{
+.contenedor-bloques-perfiles{
   width: 100vh;
   display: flex;
   flex-direction: row;
-  text-align: start;
+  justify-content: center;
 }
 
 .bloque-perfil{
   background-color: #41F193;
   padding: 30px 20px;
   width: 500px;
-  height: 440px;
+  height: 400px;
   margin: 10px 20px;
 }
 
@@ -143,16 +141,22 @@ nav{
 }
 
 .bloque-perfil p, ul{
- color: white;
+ color: #585858;
  font-size: 1.2rem;
  font-style: normal;
  font-weight: 400;
 }
 
+
+#titulo-perfiles{
+  text-align: center;
+  margin-left: 0;
+}
 #seccion-perfiles{
   display: flex;
   flex-direction: row;
   color: white;
+  height: 650px;
 }
 
 #seccion-plan-de-estudios {
@@ -162,8 +166,8 @@ nav{
 }
 
 #seccion-plan-de-estudios h2 {
+  margin-left: 10px;
   margin-bottom: 32px;
-  font-size: 1.4rem;
 }
 
 .accordion-grid {
@@ -190,7 +194,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -208,11 +212,13 @@ nav{
   padding: 0 20px 18px 36px;
   margin: 0;
   line-height: 2;
+  color: white;
 }
 
 
 #banner-campo-laboral{
   background-color: #7c3aed;
+  color: white;
 }
 
 .contendor-areas-de-trabajo{
@@ -231,8 +237,8 @@ nav{
 .contendor-areas-de-trabajo div{
   background-color: #7c3aed;
   border:1px solid #0A192F;
-  margin: 80px 40px ;
-  padding: 20px;
+  margin: 40px 40px ;
+  padding: 30px;
   font-size: 30px;
   text-align: center;
 }
@@ -244,8 +250,8 @@ nav{
 }
 
 #seccion-area-trabajo h2{
-  text-align: center;
-  margin-bottom: 0;
+  margin-top: 50px;
+  text-align: start;
 }
 
 
@@ -262,6 +268,7 @@ nav{
 
 #banner-universidades{
   background-color: #1f6feb;
+  color: white;
 }
 
 .bloque-uni{
@@ -293,8 +300,11 @@ nav{
   margin-left: 20px;
 }
 
-.contenedor-unis a{
+.info-universidad a{
   text-decoration: none;
+  color: black;
+  font-style: normal;
+  font-weight: 400;
 }
 
 
