@@ -477,48 +477,6 @@ button{
 
 }
 
-/* Dispositivos medianos (tabletas horizontales, 768px o mas) */
-@media only screen and (min-width: 768px) {
-    h1 {
-    font-size: 3rem;
-  }
-
-  .banner-inicial {
-    padding: 4rem 3rem;
-  }
-
-  .accordion-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #seccion-perfiles {
-    flex-direction: row;
-    height: auto;
-    align-items: center;
-  }
-
-  .contenedor-bloques-perfiles {
-    width: 100%;
-  }
-
-  .bloque-perfil {
-    width: 40%;
-    height: auto;
-  }
-
-  .contendor-areas-de-trabajo {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .bloque-uni {
-    height: auto;
-    margin: 30px 30px;
-  }
-
-  .logo-universidad {
-    height: 120px;
-  }
-}
 
 /* Dispositivos grandes (laptops/desktops, 992px o mas) */
 @media only screen and (min-width: 992px) {
