@@ -1,4 +1,5 @@
 
+/*------- Reglas de estilo globales------- */
 body{
    background-color: #0A192F ;
    font-family: "Poppins", sans-serif;
@@ -47,6 +48,8 @@ nav{
   justify-content: end;
   padding: 1rem 2rem;
 }
+
+/*------- Reglas de estilo para página de inicio ------- */
 .banner-inicial{
   padding: 6rem;
   line-height: 1px;
@@ -82,8 +85,6 @@ nav{
   object-position: center;
 }
 
-
-
 #contenedor-duracion{
   width: 100%;
   padding: 40px 30px;
@@ -102,8 +103,6 @@ nav{
   text-align: center;
   border-radius: 10px;
 }
-
-
 
 #bloque-duracion p{
   margin: 3px;
@@ -215,7 +214,7 @@ nav{
   color: white;
 }
 
-
+/*------- Reglas de estilo para página de Campo Laboral ------- */
 #banner-campo-laboral{
   background-color: #7c3aed;
   color: white;
@@ -266,6 +265,7 @@ nav{
 }
 
 
+/*------- Reglas de estilo para página de Universidades ------- */
 #banner-universidades{
   background-color: #1f6feb;
   color: white;
@@ -321,4 +321,284 @@ button{
 }
 
 
+/*------- Breakpoints para Diseño Responsivo ------- */
+/* Dispositivos extra pequeños (teléfonos, 600px o menos) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 
+  h2 {
+    font-size: 1.4rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .banner-inicial {
+    padding: 2rem 1rem;
+    line-height: normal;
+  }
+
+  nav {
+    justify-content: center;
+    padding: 0.8rem 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin-left: 8px;
+    font-size: 0.85rem;
+  }
+
+  #seccion-perfiles {
+    flex-direction: column;
+    height: auto;
+  }
+
+
+  .bloque-perfil {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  
+  .contenedor-bloques-perfiles {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .accordion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imagen-inicio {
+    height: 200px;
+  }
+
+  #bloque-duracion {
+    width: 90%;
+    font-size: 1.1rem;
+    height: auto;
+    padding: 15px;
+  }
+
+
+  .contendor-areas-de-trabajo {
+    grid-template-columns: 1fr;
+  }
+
+  
+  .contendor-areas-de-trabajo div {
+    margin: 15px 10px;
+    font-size: 1rem;
+  }
+
+  
+  .contendor-areas-de-trabajo img {
+    width: 120px;
+  }
+
+  
+  .bloque-uni {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 15px;
+    align-items: center;
+  }
+
+  .logo-universidad {
+    height: 80px;
+  }
+
+  .info-universidad {
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .bloque-uni p {
+    font-size: 1rem;
+  }
+
+}
+
+/* Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600px o mas) */
+@media only screen and (min-width: 600px) {
+  .banner-inicial {
+    padding: 3rem 2rem;
+    line-height: normal;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  nav {
+    justify-content: flex-end;
+  }
+
+  .accordion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contendor-areas-de-trabajo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contenedor-bloques-perfiles {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bloque-perfil {
+    width: 45%;
+    height: auto;
+  }
+
+  .bloque-uni {
+    flex-direction: row;
+    height: auto;
+    margin: 25px 20px;
+    align-items: center;
+  }
+
+  .logo-universidad {
+    height: 100px;
+  }
+
+  .info-universidad {
+    margin-left: 20px;
+    text-align: left;
+  }
+
+}
+
+/* Dispositivos medianos (tabletas horizontales, 768px o mas) */
+@media only screen and (min-width: 768px) {
+    h1 {
+    font-size: 3rem;
+  }
+
+  .banner-inicial {
+    padding: 4rem 3rem;
+  }
+
+  .accordion-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #seccion-perfiles {
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+  }
+
+  .contenedor-bloques-perfiles {
+    width: 100%;
+  }
+
+  .bloque-perfil {
+    width: 40%;
+    height: auto;
+  }
+
+  .contendor-areas-de-trabajo {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .bloque-uni {
+    height: auto;
+    margin: 30px 30px;
+  }
+
+  .logo-universidad {
+    height: 120px;
+  }
+}
+
+/* Dispositivos grandes (laptops/desktops, 992px o mas) */
+@media only screen and (min-width: 992px) {
+    
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    margin-left: 50px;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .banner-inicial {
+    padding: 6rem;
+    line-height: 1px;
+  }
+
+  #seccion-perfiles {
+    height: 650px;
+    flex-direction: row;
+  }
+
+  .contenedor-bloques-perfiles {
+    width: 100vh; 
+  }
+
+  .bloque-perfil {
+    width: 500px;
+    height: 400px;
+  }
+
+  .imagen-inicio {
+    height: 400px;
+  }
+
+  #bloque-duracion {
+    width: 300px;
+    height: 160px;
+    font-size: 1.7rem;
+    padding: 20px 30px;
+  }
+
+  .bloque-uni {
+    height: 200px;
+    margin: 40px 50px;
+  }
+
+  .logo-universidad {
+    height: 150px;
+  }
+}
+
+/* Dispositivos extra grandes (laptops grandes y desktops, 1200px o mas) */
+@media only screen and (min-width: 1200px) {
+  
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .banner-inicial {
+    padding: 7rem;
+  }
+
+  #bloque-descripcion-banner-inicio {
+    max-width: 600px;
+  }
+
+  .contendor-areas-de-trabajo div {
+    margin: 40px 50px;
+  }
+
+  .bloque-uni {
+    margin: 40px 80px;
+  }
+
+}
