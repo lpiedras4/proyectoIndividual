@@ -102,6 +102,7 @@ nav{
   font-size: 1.7rem;
   text-align: center;
   border-radius: 10px;
+  margin: 18px;
 }
 
 #bloque-duracion p{
@@ -114,15 +115,12 @@ nav{
   font-weight: 600;
 }
 
-.contenedor-perfil{
- display: block;
-}
-
 .contenedor-bloques-perfiles{
-  width: 100vh;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 30px;
 }
 
 .bloque-perfil{
@@ -130,8 +128,7 @@ nav{
   padding: 30px 20px;
   width: 500px;
   min-height: 400px;
-  margin: 10px 20px;
-  overflow-y: auto;
+  margin: 0px 50px;
 }
 
 .bloque-perfil h3{
@@ -140,7 +137,7 @@ nav{
  font-weight: 500;
 }
 
-.bloque-perfil p, ul{
+.bloque-perfil p, .bloque-perfil ul{
  color: #585858;
  font-size: 1.2rem;
  font-style: normal;
@@ -151,12 +148,12 @@ nav{
 #titulo-perfiles{
   text-align: center;
   margin-left: 0;
+  margin-bottom: 30px;
 }
 #seccion-perfiles{
-  display: flex;
-  flex-direction: row;
-  color: white;
-  height: 650px;
+  width: 80vw;
+  padding: 40px 20px;
+  background-color: #0A192F;
 }
 
 #seccion-plan-de-estudios {
@@ -321,368 +318,162 @@ button{
   border-radius: 6px;
 }
 
+/* Diseño responsivo*/
 
-/*------- Breakpoints para Diseño Responsivo ------- */
-/* Dispositivos extra pequeños (teléfonos, 600px o menos) */
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 1.1rem;
-  }
-
-  .banner-inicial {
-    padding: 2rem 1rem;
-    line-height: normal;
-  }
-
-  nav {
-    justify-content: center;
-    padding: 0.8rem 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  nav a {
-    margin-left: 8px;
-    font-size: 0.85rem;
-  }
-
-  #seccion-perfiles {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .bloque-perfil {
-    width: 90%;
-    min-height: auto;
-    margin: 10px auto;
-    overflow-y: visible;
-  }
-
-  
-  .contenedor-bloques-perfiles {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  
-  .accordion-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .imagen-inicio {
-    height: 200px;
-  }
-
-  #bloque-duracion {
-    width: 90%;
-    font-size: 1.1rem;
-    height: auto;
-    padding: 15px;
-  }
-
-  .contendor-areas-de-trabajo {
-    grid-template-columns: 1fr;
-  }
-
-  .contendor-areas-de-trabajo div {
-    margin: 15px 10px;
-    font-size: 1rem;
-  }
-
-  .contendor-areas-de-trabajo img {
-    width: 120px;
-  }
-
-  .bloque-uni {
-    flex-direction: column;
-    height: auto;
-    margin: 20px 15px;
-    align-items: center;
-  }
-
-  .logo-universidad {
-    height: 80px;
-  }
-
-  .info-universidad {
-    margin-left: 0;
-    margin-top: 15px;
-    text-align: center;
-  }
-
-  .bloque-uni p {
-    font-size: 1rem;
-  }
+/*Pantallas Extra Pequeñas*/
+@media only screen and (max-width: 600px){
+nav {
+  flex-direction: column;
+  align-items: center;
+}
+nav a {
+  margin: 5px 0;
 }
 
-/* Dispositivos pequeños (teléfonos, 600px o más) */
-@media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+.banner-inicial {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  line-height: normal;
+}
 
-  h2 {
-    font-size: 1.6rem;
-    margin-left: 20px;
-  }
+h1 {
+  font-size: 2.2rem;
+}
 
-  .banner-inicial {
-    padding: 3rem 2rem;
-    line-height: 1.2;
-  }
+h2 {
+  font-size: 1.5rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+.contenedor-bloques-perfiles {
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+}
+
+.bloque-perfil {
+  width: 90%;
+  margin: 20px 0;
+}
+
+#bloque-duracion {
+  width: 90%;
+}
+
+.accordion-grid {
+  grid-template-columns: 1fr;
+}
+
+.contenedor-areas-de-trabajo {
+  grid-template-columns: 1fr;
+}
+
+.contenedor-areas-de-trabajo div {
+  margin: 20px 10px;
+}
+
+.bloque-uni {
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+
+.logo-universidad {
+  height: 100px;
+}
+
+.info-universidad {
+  margin-left: 0;
+}
+}
+
+/*Pantallas Pequeñas*/
+@media (min-width: 600px) {
 
   nav {
-    padding: 1rem 1rem;
-  }
-
-  nav a {
-    margin-left: 15px;
-    font-size: 0.9rem;
-  }
-
-  #seccion-perfiles {
     flex-direction: row;
-    height: auto;
-  }
-
-  .bloque-perfil {
-    width: 45%;
-    min-height: auto;
-    margin: 10px 15px;
-    overflow-y: visible;
-  }
-
-  .contenedor-bloques-perfiles {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
-  .accordion-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .imagen-inicio {
-    height: 300px;
+  .bloque-perfil {
+    width: 80%;
   }
 
   #bloque-duracion {
-    width: 250px;
-    height: auto;
-    font-size: 1.3rem;
-    padding: 15px 20px;
+    width: 60%;
   }
 
-  .contendor-areas-de-trabajo {
+  .contenedor-areas-de-trabajo {
     grid-template-columns: 1fr 1fr;
   }
 
-  .contendor-areas-de-trabajo div {
-    margin: 25px 20px;
-    font-size: 1.2rem;
-  }
-
-  .contendor-areas-de-trabajo img {
-    width: 150px;
-  }
-
-  .bloque-uni {
-    flex-direction: row;
-    height: 180px;
-    margin: 30px 30px;
-  }
-
-  .logo-universidad {
-    height: 100px;
-  }
-
-  .info-universidad {
-    margin-left: 15px;
-  }
-
-  .bloque-uni p {
-    font-size: 1.2rem;
-  }
 }
 
-/* Dispositivos medianos (tablets, 768px o más) */
-@media only screen and (min-width: 768px) {
+/*Pantallas Medianas*/
+@media (min-width: 768px) {
+
   h1 {
     font-size: 3rem;
   }
 
-  h2 {
-    font-size: 1.8rem;
-    margin-left: 30px;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-
-  .banner-inicial {
-    padding: 4rem 3rem;
-    line-height: 1;
-  }
-
-  nav {
-    padding: 1rem 1.5rem;
-  }
-
-  nav a {
-    margin-left: 20px;
-    font-size: 1rem;
-  }
-
-  #seccion-perfiles {
+  .contenedor-bloques-perfiles {
     flex-direction: row;
-    height: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .bloque-perfil {
-    width: 400px;
-    min-height: 350px;
-    margin: 15px 20px;
-  }
-
-  .contenedor-bloques-perfiles {
-    width: 90%;
-    flex-direction: row;
-  }
-
-  .accordion-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .imagen-inicio {
-    height: 350px;
-  }
-
-  #bloque-duracion {
-    width: 280px;
-    height: 150px;
-    font-size: 1.5rem;
-    padding: 18px 25px;
-  }
-
-  .contendor-areas-de-trabajo {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .contendor-areas-de-trabajo div {
-    margin: 30px 25px;
-    font-size: 1.5rem;
-  }
-
-  .contendor-areas-de-trabajo img {
-    width: 180px;
-  }
-
-  .bloque-uni {
-    height: 190px;
-    margin: 35px 40px;
-  }
-
-  .logo-universidad {
-    height: 130px;
-  }
-
-  .info-universidad {
-    margin-left: 18px;
-  }
-
-  .bloque-uni p {
-    font-size: 1.4rem;
-  }
-}
-
-/* Dispositivos grandes (laptops/desktops, 992px o mas) */
-@media only screen and (min-width: 992px) {
-    
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    margin-left: 50px;
-    text-align: left;
-    font-size: 2rem;
-  }
-
-  .banner-inicial {
-    padding: 6rem;
-    line-height: 1px;
-  }
-
-  #seccion-perfiles {
-    width: 600px;
-    height: 650px;
-    flex-direction: row;
-  }
-
-  .contenedor-bloques-perfiles {
-    width: 70vw; 
-  }
-
-  .bloque-perfil {
-    width: 500px;
-    min-height: 400px;
-  }
-
-  .imagen-inicio {
-    height: 400px;
+    width: 45%;
+    margin: 20px;
   }
 
   #bloque-duracion {
     width: 300px;
-    height: 160px;
-    font-size: 1.7rem;
-    padding: 20px 30px;
+  }
+
+  .accordion-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contenedor-areas-de-trabajo {
+    grid-template-columns: 1fr 1fr;
   }
 
   .bloque-uni {
-    height: 200px;
-    margin: 40px 50px;
+    flex-direction: row;
+    text-align: left;
   }
 
   .logo-universidad {
-    height: 150px;
+    height: 120px;
   }
 }
 
-/* Dispositivos extra grandes (laptops grandes y desktops, 1200px o mas) */
-@media only screen and (min-width: 1200px) {
-  
+/*Pantallas Grandes*/
+@media (min-width: 992px) {
+  nav {
+    justify-content: flex-end;
+  }
+
   h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 
-  .banner-inicial {
-    padding: 7rem;
+  .contenedor-bloques-perfiles {
+    flex-wrap: nowrap;
   }
 
-  #bloque-descripcion-banner-inicio {
-    max-width: 600px;
+  .bloque-perfil {
+    width: 500px;
   }
 
-  .contendor-areas-de-trabajo div {
-    margin: 40px 50px;
+  .contenedor-areas-de-trabajo {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .bloque-uni {
-    margin: 40px 80px;
+    margin: 40px 100px;
   }
 
 }
