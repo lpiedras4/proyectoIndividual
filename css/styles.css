@@ -129,8 +129,9 @@ nav{
   background-color: #41F193;
   padding: 30px 20px;
   width: 500px;
-  height: 400px;
+  min-height: 400px;
   margin: 10px 20px;
+  overflow-y: auto;
 }
 
 .bloque-perfil h3{
@@ -359,11 +360,11 @@ button{
     height: auto;
   }
 
-
   .bloque-perfil {
     width: 90%;
-    height: auto;
+    min-height: auto;
     margin: 10px auto;
+    overflow-y: visible;
   }
 
   
@@ -424,27 +425,41 @@ button{
   }
 }
 
-/* Dispositivos pequeños (tabletas verticales y teléfonos grandes, 600px o mas) */
+/* Dispositivos pequeños (teléfonos, 600px o más) */
 @media only screen and (min-width: 600px) {
-  .banner-inicial {
-    padding: 3rem 2rem;
-    line-height: normal;
-  }
-
   h1 {
     font-size: 2.5rem;
   }
 
+  h2 {
+    font-size: 1.6rem;
+    margin-left: 20px;
+  }
+
+  .banner-inicial {
+    padding: 3rem 2rem;
+    line-height: 1.2;
+  }
+
   nav {
-    justify-content: flex-end;
+    padding: 1rem 1rem;
   }
 
-  .accordion-grid {
-    grid-template-columns: 1fr;
+  nav a {
+    margin-left: 15px;
+    font-size: 0.9rem;
   }
 
-  .contendor-areas-de-trabajo {
-    grid-template-columns: 1fr 1fr;
+  #seccion-perfiles {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .bloque-perfil {
+    width: 45%;
+    min-height: auto;
+    margin: 10px 15px;
+    overflow-y: visible;
   }
 
   .contenedor-bloques-perfiles {
@@ -454,16 +469,38 @@ button{
     justify-content: center;
   }
 
-  .bloque-perfil {
-    width: 45%;
+  .accordion-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .imagen-inicio {
+    height: 300px;
+  }
+
+  #bloque-duracion {
+    width: 250px;
     height: auto;
+    font-size: 1.3rem;
+    padding: 15px 20px;
+  }
+
+  .contendor-areas-de-trabajo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contendor-areas-de-trabajo div {
+    margin: 25px 20px;
+    font-size: 1.2rem;
+  }
+
+  .contendor-areas-de-trabajo img {
+    width: 150px;
   }
 
   .bloque-uni {
     flex-direction: row;
-    height: auto;
-    margin: 25px 20px;
-    align-items: center;
+    height: 180px;
+    margin: 30px 30px;
   }
 
   .logo-universidad {
@@ -471,12 +508,105 @@ button{
   }
 
   .info-universidad {
-    margin-left: 20px;
-    text-align: left;
+    margin-left: 15px;
   }
 
+  .bloque-uni p {
+    font-size: 1.2rem;
+  }
 }
 
+/* Dispositivos medianos (tablets, 768px o más) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-left: 30px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .banner-inicial {
+    padding: 4rem 3rem;
+    line-height: 1;
+  }
+
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav a {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+
+  #seccion-perfiles {
+    flex-direction: row;
+    height: 600px;
+  }
+
+  .bloque-perfil {
+    width: 400px;
+    min-height: 350px;
+    margin: 15px 20px;
+  }
+
+  .contenedor-bloques-perfiles {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .accordion-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .imagen-inicio {
+    height: 350px;
+  }
+
+  #bloque-duracion {
+    width: 280px;
+    height: 150px;
+    font-size: 1.5rem;
+    padding: 18px 25px;
+  }
+
+  .contendor-areas-de-trabajo {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contendor-areas-de-trabajo div {
+    margin: 30px 25px;
+    font-size: 1.5rem;
+  }
+
+  .contendor-areas-de-trabajo img {
+    width: 180px;
+  }
+
+  .bloque-uni {
+    height: 190px;
+    margin: 35px 40px;
+  }
+
+  .logo-universidad {
+    height: 130px;
+  }
+
+  .info-universidad {
+    margin-left: 18px;
+  }
+
+  .bloque-uni p {
+    font-size: 1.4rem;
+  }
+}
 
 /* Dispositivos grandes (laptops/desktops, 992px o mas) */
 @media only screen and (min-width: 992px) {
@@ -497,17 +627,18 @@ button{
   }
 
   #seccion-perfiles {
+    width: 600px;
     height: 650px;
     flex-direction: row;
   }
 
   .contenedor-bloques-perfiles {
-    width: 100vh; 
+    width: 70vw; 
   }
 
   .bloque-perfil {
     width: 500px;
-    height: 400px;
+    min-height: 400px;
   }
 
   .imagen-inicio {
