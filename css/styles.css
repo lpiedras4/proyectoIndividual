@@ -478,3 +478,103 @@ h2 {
   }
 
 }
+
+/* Estilos de Área de Especialidad */
+
+#area-especialidad {
+    font-family: 'Segoe UI', sans-serif; 
+    background: #f4f7f6; 
+    display: flex; 
+    justify-content: center; 
+    padding: 50px; 
+}
+
+#banner-area-especialidad ,.banner-inicial{
+  background-color: #419cf1;
+} 
+
+/* ===== Formulario de Aspirante ===== */
+
+#form-aspirante {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.form-aspirante-card {
+  background-color: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.form-aspirante-title {
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-aspirante-label {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-aspirante-select,
+.form-aspirante-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #0A192F;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-aspirante-input::placeholder {
+  color: #a4a4a4;
+}
+
+#form-aspirante-add {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #41F193;
+  cursor: pointer;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-aspirante-add:hover {
+  text-decoration: underline;
+}
+
+.form-aspirante-btn {
+  width: 100%;
+  background-color: #1F6FEB;
+  color: white;
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.form-aspirante-btn:hover {
+  background-color: #1558c0;
+}
+
+.form-aspirante-resultado {
+  margin-top: 20px;
+  color: white;
+}
+
+.form-aspirante-tag {
+  display: inline-block;
+  background-color: #41F193;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}

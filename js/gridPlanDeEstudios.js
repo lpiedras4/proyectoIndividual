@@ -1,3 +1,4 @@
+
 document.querySelectorAll('.accordion-header').forEach(button =>{
   button.addEventListener('click', ()=>{
     const item = button.parentElement;
@@ -6,3 +7,5 @@ document.querySelectorAll('.accordion-header').forEach(button =>{
     icon.textContent = isOpen ? '∧' : '∨';
   });
   });
+
+  
