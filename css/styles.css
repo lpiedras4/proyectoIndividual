@@ -499,6 +499,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 60px 20px;
+  
 }
 
 .form-aspirante-card {
@@ -523,7 +524,7 @@ h2 {
 }
 
 .form-aspirante-select,
-.form-aspirante-input {
+#form-aspirante-input {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
