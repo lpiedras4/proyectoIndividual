@@ -30,6 +30,10 @@ anadirInteres.addEventListener("click", (e) => {
 });
 
 btnGenerarPerfil.addEventListener("click", (e) => {
+  if(setHabilidades.size === 0){
+    alert("Ingresa una habilidad para generar tu perfil");
+    return;
+  }
   const valor = areaSW.value;
   enfoque = enfoques.get(valor);
   resultado.innerHTML = `
