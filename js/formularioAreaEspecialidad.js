@@ -1,10 +1,11 @@
 
 
 /*Obtener elementos interactivos del DOM*/
-const resultado = document.querySelector(".form-aspirante-resultado");
+const resultado = document.getElementById("form-aspirante-resultado");
 const btnGenerarPerfil = document.getElementById("form-aspirante-btn");
 const areaSW = document.querySelector(".form-aspirante-select");
 const anadirInteres = document.getElementById("form-aspirante-add");
+const input = document.getElementById("form-aspirante-input");
 const setHabilidades = new Set();
 const enfoques = new Map();
 enfoques.set("Web", "Construcción de aplicaciones web modernas");
@@ -15,17 +16,17 @@ let enfoque = "";
 let fortalezas = "";
 
 anadirInteres.addEventListener("click", (e) => {
-
   const habilidad = document.getElementById("form-aspirante-input").value.trim();
   if (habilidad === "") {
     alert("Ingresa un interés");
+    return;
   }
   if (setHabilidades.has(habilidad)) {
-    alert("Este interés ya ha sido agregado, ingresa otro");
+    alert("Esta habilidad ya ha sido agregada, ingresa otra");
   } else {
     setHabilidades.add(habilidad);
-    console.log(habilidad + " agregada")
   }
+  input.value = "";
 });
 
 btnGenerarPerfil.addEventListener("click", (e) => {
@@ -36,6 +37,13 @@ btnGenerarPerfil.addEventListener("click", (e) => {
       <p><strong>Enfoque:</strong> ${enfoque}</p>
       
       <p><strong>Fortalezas:</strong></p>
-      <span class="form-aspirante-tag"></span>
+      
     `;
+    for (const habilidad of setHabilidades){
+      resultado.innerHTML+=`
+      <span class="form-aspirante-tag">${habilidad}</span>
+      `;
+    }
+    resultado.style.display="block";
+    setHabilidades.clear();
 });
