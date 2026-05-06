@@ -1,5 +1,4 @@
 
-
 /*Obtener elementos interactivos del DOM*/
 const resultado = document.getElementById("form-aspirante-resultado");
 const btnGenerarPerfil = document.getElementById("form-aspirante-btn");
@@ -8,7 +7,7 @@ const anadirInteres = document.getElementById("form-aspirante-add");
 const input = document.getElementById("form-aspirante-input");
 const setHabilidades = new Set();
 const enfoques = new Map();
-enfoques.set("Web", "Construcción de aplicaciones web modernas");
+enfoques.set("Web", "Construcción de aplicaciones web modernas.");
 enfoques.set("Data", "Análisis de datos y modelos predictivos.");
 enfoques.set("Mobile", "Desarrollo de apps móviles.");
 
@@ -31,7 +30,7 @@ anadirInteres.addEventListener("click", (e) => {
 
 btnGenerarPerfil.addEventListener("click", (e) => {
   if(setHabilidades.size === 0){
-    alert("Ingresa una habilidad para generar tu perfil");
+    alert("Ingresa mínimo una habilidad para generar tu perfil");
     return;
   }
   const valor = areaSW.value;
