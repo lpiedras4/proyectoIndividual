@@ -32,7 +32,7 @@ btnGenerarPerfil.addEventListener("click", (e) => {
   const valor = areaSW.value;
   enfoque = enfoques.get(valor);
   resultado.innerHTML = `
-    <h3>Tu Perfil de Futuro Ingeniero: ${valor} </h3>
+    <h3><strong>Tu Perfil de Futuro Ingeniero:</strong> ${valor} </h3>
       <p><strong>Enfoque:</strong> ${enfoque}</p>
       
       <p><strong>Fortalezas:</strong></p>
