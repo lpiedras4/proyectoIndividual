@@ -1,16 +1,15 @@
-
 /*------- Reglas de estilo globales------- */
-body{
-   background-color: #0A192F ;
-   font-family: "Poppins", sans-serif;
-   font-style: normal;
+body {
+  background-color: #0a192f;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
 }
-h1{
+h1 {
   font-weight: 800;
   font-size: 4rem;
 }
 
-h2{
+h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -19,39 +18,41 @@ h2{
   font-size: 2rem;
 }
 
-h3{
+h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5em;
 }
 
-p, ul,a{
+p,
+ul,
+a {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-nav a{
-  margin-left: 30px ;
-  color:white;
+nav a {
+  margin-left: 30px;
+  color: white;
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 10px;
 }
-nav a:hover{
-  background-color: #1F6FEB;
+nav a:hover {
+  background-color: #1f6feb;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: end;
   padding: 1rem 2rem;
-  font-size:1.2em;
+  font-size: 1.2em;
 }
 
 /*------- Reglas de estilo para página de inicio ------- */
-.banner-inicial{
+.banner-inicial {
   padding: 6rem;
   line-height: 1px;
   display: flex;
@@ -59,11 +60,11 @@ nav{
   align-items: center;
 }
 
-#banner-inicio{
-  background-color: #41F193;
+#banner-inicio {
+  background-color: #41f193;
 }
 
-#bloque-descripcion-banner-inicio{
+#bloque-descripcion-banner-inicio {
   position: relative;
   color: white;
   padding: 26px 30px;
@@ -72,13 +73,13 @@ nav{
   margin-top: 20px;
 }
 
-#bloque-descripcion-banner-inicio p{
+#bloque-descripcion-banner-inicio p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-.imagen-inicio{
+.imagen-inicio {
   display: block;
   width: 100%;
   height: 400px;
@@ -86,7 +87,7 @@ nav{
   object-position: center;
 }
 
-#contenedor-duracion{
+#contenedor-duracion {
   width: 100%;
   padding: 40px 30px;
   display: flex;
@@ -94,11 +95,11 @@ nav{
   align-items: center;
 }
 
-#bloque-duracion{
+#bloque-duracion {
   color: black;
   width: 300px;
   height: 160px;
-  background-color: #41F193;
+  background-color: #41f193;
   padding: 20px 30px;
   font-size: 1.7rem;
   text-align: center;
@@ -106,17 +107,17 @@ nav{
   margin: 18px;
 }
 
-#bloque-duracion p{
+#bloque-duracion p {
   margin: 3px;
 }
-#duracion-carrera{
+#duracion-carrera {
   font-weight: 300;
 }
-#texto-duracion{
+#texto-duracion {
   font-weight: 600;
 }
 
-.contenedor-bloques-perfiles{
+.contenedor-bloques-perfiles {
   width: auto;
   display: flex;
   flex-direction: row;
@@ -124,8 +125,8 @@ nav{
   margin-left: 30px;
 }
 
-.bloque-perfil{
-  background-color: #41F193;
+.bloque-perfil {
+  background-color: #41f193;
   padding: 30px 20px;
   width: 500px;
   min-height: 400px;
@@ -133,29 +134,29 @@ nav{
   border-radius: 10px;
 }
 
-.bloque-perfil h3{
- color: black;
- font-style: normal;
- font-weight: 500;
+.bloque-perfil h3 {
+  color: black;
+  font-style: normal;
+  font-weight: 500;
 }
 
-.bloque-perfil p, .bloque-perfil ul{
- color: #585858;
- font-size: 1.2rem;
- font-style: normal;
- font-weight: 400;
+.bloque-perfil p,
+.bloque-perfil ul {
+  color: #585858;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
 }
 
-
-#titulo-perfiles{
+#titulo-perfiles {
   text-align: center;
   margin-left: 0;
   margin-bottom: 30px;
 }
-#seccion-perfiles{
+#seccion-perfiles {
   width: 80vw;
   padding: 40px 20px;
-  background-color: #0A192F;
+  background-color: #0a192f;
 }
 
 #seccion-plan-de-estudios {
@@ -177,7 +178,7 @@ nav{
 }
 
 .accordion-item {
-  background-color: #1F6FEB;
+  background-color: #1f6feb;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -215,103 +216,100 @@ nav{
 }
 
 /*------- Reglas de estilo para página de Campo Laboral ------- */
-#banner-campo-laboral{
+#banner-campo-laboral {
   background-color: #7c3aed;
   color: white;
 }
 
-.contendor-areas-de-trabajo{
+.contendor-areas-de-trabajo {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
 }
 
-.contendor-areas-de-trabajo p{
+.contendor-areas-de-trabajo p {
   color: white;
   font-weight: 500;
   font-style: normal;
   margin: 1px;
 }
 
-.contendor-areas-de-trabajo div{
+.contendor-areas-de-trabajo div {
   background-color: #7c3aed;
-  border:1px solid #0A192F;
-  margin: 40px 40px ;
+  border: 1px solid #0a192f;
+  margin: 40px 40px;
   padding: 30px;
   font-size: 30px;
   text-align: center;
 }
-.contendor-areas-de-trabajo img{
+.contendor-areas-de-trabajo img {
   width: 200px;
   height: auto;
   object-fit: cover;
   border-radius: 3px;
 }
 
-#seccion-area-trabajo h2{
+#seccion-area-trabajo h2 {
   margin-top: 50px;
   text-align: start;
 }
 
-
-.contendor-areas-de-trabajo span{
- color: #a4a4a4;
- font-style: normal;
- font-weight: 300;
+.contendor-areas-de-trabajo span {
+  color: #a4a4a4;
+  font-style: normal;
+  font-weight: 300;
 }
 
-.bloque-info-area-de-trabajo{
+.bloque-info-area-de-trabajo {
   text-align: start;
 }
 
-
 /*------- Reglas de estilo para página de Universidades ------- */
-#banner-universidades{
+#banner-universidades {
   background-color: #1f6feb;
   color: white;
 }
 
-.bloque-uni{
-  background-color: #1F6FEB;
+.bloque-uni {
+  background-color: #1f6feb;
   height: 200px;
   margin: 40px 50px;
   padding: 20px 30px;
   display: flex;
   flex-direction: row;
 }
-.bloque-uni p{
+.bloque-uni p {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.logo-contenedor{
+.logo-contenedor {
   display: block;
 }
 
-.logo-universidad{
+.logo-universidad {
   height: 150px;
   width: auto;
 }
 
-.info-universidad{
+.info-universidad {
   display: block;
   margin-left: 20px;
 }
 
-.info-universidad a{
+.info-universidad a {
   text-decoration: none;
   color: black;
   font-style: normal;
   font-weight: 400;
 }
 
-
-button{
+button {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  background-color: #41F193;
+  background-color: #41f193;
   color: black;
   padding: 6px 15px;
   font-size: 1rem;
@@ -323,76 +321,75 @@ button{
 /* Diseño responsivo*/
 
 /*Pantallas Extra Pequeñas*/
-@media only screen and (max-width: 600px){
-nav {
-  flex-direction: column;
-  align-items: center;
-}
-nav a {
-  margin: 5px 0;
-}
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 5px 0;
+  }
 
-.banner-inicial {
-  padding: 3rem 1.5rem;
-  text-align: center;
-  line-height: normal;
-}
+  .banner-inicial {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    line-height: normal;
+  }
 
-h1 {
-  font-size: 2.2rem;
-}
+  h1 {
+    font-size: 2.2rem;
+  }
 
-h2 {
-  font-size: 1.5rem;
-  margin-left: 0;
-  text-align: center;
-}
+  h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
 
-.contenedor-bloques-perfiles {
-  flex-direction: column;
-  align-items: center;
-  margin-left: 0;
-}
+  .contenedor-bloques-perfiles {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
 
-.bloque-perfil {
-  width: 90%;
-  margin: 20px 0;
-}
+  .bloque-perfil {
+    width: 90%;
+    margin: 20px 0;
+  }
 
-#bloque-duracion {
-  width: 90%;
-}
+  #bloque-duracion {
+    width: 90%;
+  }
 
-.accordion-grid {
-  grid-template-columns: 1fr;
-}
+  .accordion-grid {
+    grid-template-columns: 1fr;
+  }
 
-.contenedor-areas-de-trabajo {
-  grid-template-columns: 1fr;
-}
+  .contenedor-areas-de-trabajo {
+    grid-template-columns: 1fr;
+  }
 
-.contenedor-areas-de-trabajo div {
-  margin: 20px 10px;
-}
+  .contenedor-areas-de-trabajo div {
+    margin: 20px 10px;
+  }
 
-.bloque-uni {
-  flex-direction: column;
-  height: auto;
-  text-align: center;
-}
+  .bloque-uni {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
 
-.logo-universidad {
-  height: 100px;
-}
+  .logo-universidad {
+    height: 100px;
+  }
 
-.info-universidad {
-  margin-left: 0;
-}
+  .info-universidad {
+    margin-left: 0;
+  }
 }
 
 /*Pantallas Pequeñas*/
 @media (min-width: 600px) {
-
   nav {
     flex-direction: row;
     justify-content: center;
@@ -409,12 +406,10 @@ h2 {
   .contenedor-areas-de-trabajo {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 /*Pantallas Medianas*/
 @media (min-width: 768px) {
-
   h1 {
     font-size: 3rem;
   }
@@ -477,22 +472,22 @@ h2 {
   .bloque-uni {
     margin: 40px 100px;
   }
-
 }
 
 /* Estilos de Área de Especialidad */
 
 #area-especialidad {
-    font-family: 'Segoe UI', sans-serif; 
-    background: #f4f7f6; 
-    display: flex; 
-    justify-content: center; 
-    padding: 50px; 
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
-#banner-area-especialidad ,.banner-inicial{
+#banner-area-especialidad,
+.banner-inicial {
   background-color: #419cf1;
-} 
+}
 
 /* ===== Formulario de Aspirante ===== */
 
@@ -500,7 +495,6 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 60px 20px;
-  
 }
 
 .form-aspirante-card {
@@ -508,7 +502,7 @@ h2 {
   padding: 30px;
   border-radius: 12px;
   width: 500px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   font-size: 1.2em;
 }
 
@@ -534,12 +528,10 @@ h2 {
   margin-bottom: 15px;
   border-radius: 6px;
   border: none;
-  background-color: #0A192F;
+  background-color: #0a192f;
   color: white;
   font-family: "Poppins", sans-serif;
 }
-
-
 
 .form-aspirante-input::placeholder {
   color: #a4a4a4;
@@ -548,7 +540,7 @@ h2 {
 #form-aspirante-add {
   display: inline-block;
   font-size: 0.85rem;
-  color: #41F193;
+  color: #41f193;
   cursor: pointer;
   margin-bottom: 15px;
   width: 100%;
@@ -560,7 +552,7 @@ h2 {
 
 #form-aspirante-btn {
   width: 100%;
-  background-color: #1F6FEB;
+  background-color: #1f6feb;
   color: white;
   padding: 12px;
   font-weight: 500;
@@ -581,10 +573,60 @@ h2 {
 
 .form-aspirante-tag {
   display: inline-block;
-  background-color: #41F193;
+  background-color: #41f193;
   color: black;
   padding: 5px 10px;
   border-radius: 8px;
   font-size: 1rem;
   margin-top: 5px;
+}
+
+#banner-geolocalizacion {
+  background-color: #f1da41;
+}
+
+.contenedor-geolocalizacion {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.geolocalizacion-card {
+  background-color: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  font-size: 1.2em;
+}
+
+.geolocalizacion-title {
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+}
+
+.geolocalizacion-label {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#compartir-btn{
+ width: 100%;
+  background-color: #1f6feb;
+  color: white;
+  padding: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+#resultado-geolocalizacion {
+  margin-top: 20px;
+  color: white;
+  font-size: 1em;
+ display: none;
 }
