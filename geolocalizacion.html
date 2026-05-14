@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocalizacion</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <nav class="menu-principal">
+        <a href="index.html"> Inicio </a>
+        <a href="universidades.html"> Universidades</a>
+        <a href="campoLaboral.html"> Campo Laboral </a>
+        <a href="areaEspecialidad.html"> Área de Especialidad </a>
+        <a href="geolocalizacion.html">Geolocalización</a>
+      </nav>
+      <section id="banner-geolocalizacion" class="banner-inicial">
+        <h1>Geolocalización</h1>
+        <h3>Descubre universidades alrededor de tu ubicación</h3>
+      </section>
+      <section class="contenedor-geolocalizacion">
+        <div class="geolocalizacion-card">
+          <h2 class="geolocalizacion-title">
+            Oprime el botón para mostrar las universidades ubicadas en tu
+            localidad.
+          </h2>
+
+          <label class="geolocalizacion-label"
+            >El uso de ubicación requiere el permiso del usuario.</label
+          >
+          <label class="geolocalizacion-label"
+            >La ubicación del usuario es para fines informativos y no se guarda
+            ningun dato sin su consentimiento.</label
+          >
+
+          <button id="compartir-btn">
+            Compartir mi ubicación
+          </button>
+
+          <div id="resultado-geolocalizacion">
+            <h3><strong>Ubicación</strong></h3>
+            <p><strong>Latitud:</strong></p>
+            <p><strong>Longitud:</strong></p>
+            <p><strong>Ciudad:</strong></p>
+            
+          </div>
+        </div>
+      </section>
+      <script src="js/geolocalizacion.js"></script>
+    </body>
+  </body>
+</html>
