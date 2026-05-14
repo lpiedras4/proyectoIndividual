@@ -318,6 +318,73 @@ button {
   border-radius: 6px;
 }
 
+.contenedor-geolocalizacion {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.geolocalizacion-card {
+  background-color: #101a32;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+  color: white;
+  max-width: 1080px;
+  width: 100%;
+  padding: 32px;
+  display: grid;
+  gap: 24px;
+}
+
+.geolocalizacion-title {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+#resultado-geolocalizacion {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+#resultado-geolocalizacion h3,
+#resultado-geolocalizacion p {
+  margin: 0 0 10px 0;
+}
+
+.canvas-title {
+  margin: 0 0 16px 0;
+  font-size: 1.5rem;
+  color: #dbeafe;
+  text-align: center;
+}
+
+.canvas-wrapper {
+  background: linear-gradient(180deg, rgba(14, 24, 54, 0.96), rgba(5, 13, 34, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#mapa {
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  border-radius: 18px;
+  display: block;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
 /* Diseño responsivo*/
 
 /*Pantallas Extra Pequeñas*/

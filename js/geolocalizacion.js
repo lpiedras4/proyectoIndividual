@@ -6,7 +6,10 @@ function buscarCoordenadas() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        //API de bigDataCloud para obtener la ciudad de las coordenadas del usuario (con su permiso, obvio)
+        if (typeof window.setUsuarioMapa === 'function') {
+          window.setUsuarioMapa(position.coords.latitude, position.coords.longitude);
+        }
+        // API de bigDataCloud para obtener la ciudad de las coordenadas del usuario (con su permiso, obvio)
         const bdcAPI = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`;
         getAPI(bdcAPI);
       },
